@@ -1,13 +1,22 @@
+import java.util.Locale;
+import java.util.Scanner;
+
 public class ContaTerminal {
         public static void main(String[] args) {
-            //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-            // to see how IntelliJ IDEA suggests fixing it.
-            System.out.printf("Hello and welcome!");
 
-            for (int i = 1; i <= 5; i++) {
-                //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-                // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-                System.out.println("i = " + i);
-            }
+            Scanner scanner = new Scanner (System.in).useLocale(Locale.US);
+
+            //comentário
+            System.out.println("Digite seu nome");
+            String nome = scanner.next();
+
+            System.out.println("Seu nome é " + nome);
+
+            //To Do: conhecer e importar a classe Scanner
+            //Exibir as mensagens para o nosso usuário
+            //Obter pela scanner os valores digitados no terminal
+            //Exibir a mensagem conta criada
+
+
         }
     }
